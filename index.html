@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="TayLynn Harman">
+    <meta name="description" content="Scoots - Homepage">
+    <meta property="og:url" content="https://github.com/taylynnharman/wdd230.git">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Scoots - Homepage">
+    <meta property="og:image" content="images/hero.jpg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+    <link rel="icon" href="images/logo.svg">
+    <title>Scoots - Homepage</title>
+</head>
+
+<body>
+    <header>
+        <span id="banner">
+        </span>
+        <img class="logo" src="images/scoots.png" alt="scoots logo">
+    </header>
+    <nav>
+        <a id="menu" title="menu"></a>
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contacts.html">Contact Us</a></li>
+
+        </ul>
+    </nav>
+
+    <main class="home">
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero_small.webp" media="(max-width: 500px)">
+                <img src="images/hero_large.webp" alt="beach in cozumel" width="1500" height="600" loading="lazy">
+            </picture>
+
+        </div>
+        <section>
+            <h1>Meet the Fleet</h1>
+            <span id="summary"></span>
+            <a class="sec-button" href="rentals.html" target="_self">
+                View All Vehicles
+            </a>
+        </section>
+
+        <section class="location">
+            <h2>Locations</h2>
+            <div class="fac-container">
+                <div class="facilities">
+
+                    <div>
+                        <h3>Terminal Puerta Maya</h3>
+                        <img class="location-card" src="images/location1.jpg" alt="Location in Terminal Puerta Maya"
+                            loading="lazy">
+
+                        <h3>Facility near the Terminal at Puerta Maya</h3>
+                        <img class="location-card" src="images/rental2.jpg" alt="Scoot's Terminal Facility"
+                            loading="lazy">
+                    </div>
+                    <div>
+                        <h3>Playa del Carmen-Cozumel</h3>
+                        <img class="location-card" src="images/location2-opt.jpg"
+                            alt="Location in Playa del Carmen-Cozumel" loading="lazy">
+
+                        <h3>Facility near the Ferry at Playa del Carmen</h3>
+                        <img class="location-card" src="images/rental1.jpg" alt="Scoot's Ferry Facility" loading="lazy">
+                    </div>
+                </div>
+                <div class="msg">
+                    <h2>Discover Effortless Vehicle Rental with Scoot's</h2>
+                    <p>Conveniently located near the Cruise Terminal at Puerta Maya, and the Ferry at Playa del
+                        Carmen, Scoot's
+                        makes vehicle rentals a breeze. Enjoy the ease of returning your rental to either of our
+                        locations!
+                    </p>
+                    <a class="primary-button" href="reservations.html" target="_self">
+                        Make a Reservation
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <h2>Weather</h2>
+        <div id="weather"></div>
+
+        <section class="contact">
+            <a class="primary-button" href="contacts.html" target="_self">
+                Contact Us
+            </a>
+            <picture>
+                <source srcset="images/weatherbackdrop-small.webp" media="(max-width: 500px)">
+                <img src="images/weatherbackdrop-large.webp" alt="beach in cozumel" width="1500" height="600"
+                    loading="lazy">
+            </picture>
+        </section>
+
+    </main>
+    <footer class="home-footer">
+        <p>(444) 333-6666 | info@scoots.com </p>
+        <div class="socials">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        </div>
+        <div id="copy">
+            <p>
+                &copy;
+                <span id="currentYear"></span>
+                TayLynn Harman | Created as a project for WDD230 | <a href="references.html">References</a>
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/summary.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/active.js"></script>
+</body>
+
+</html>

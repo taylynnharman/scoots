@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="TayLynn Harman">
+    <meta name="description" content="Scoots - Reservations">
+    <meta property="og:url" content="https://github.com/taylynnharman/wdd230.git">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Scoots - Reservations">
+    <meta property="og:image" content="images/hero.jpg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+    <link rel="icon" href="images/logo.svg">
+    <title>Scoots - Reservations</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/scoots.png" alt="scoots logo">
+    </header>
+    <nav>
+        <button id="menu" title="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contacts.html">Contact Us</a></li>
+
+        </ul>
+    </nav>
+
+    <main class="reservations">
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Rental Details Form</title>
+        </head>
+
+        <body>
+
+            <h1>Reserve Now</h1>
+
+            <form action="res-received.html" method="get">
+
+                <!-- Date and Period -->
+                <label for="startDate">Rental Pickup Date<span class="required">*</span>:</label>
+                <input type="date" id="startDate" name="startDate" required>
+
+                <label for="endDate">Rental Return Date<span class="required">*</span>:</label>
+                <input type="date" id="endDate" name="endDate" required>
+                <br>
+                <label for="rentalPeriod">Rental Period<span class="required">*</span>:</label>
+                <select id="rentalPeriod" name="rentalPeriod" required>
+                    <option value="halfDay">Half Day (3 hrs)</option>
+                    <option value="fullDay">Full Day</option>
+                </select>
+                <br>
+                <!-- Rental Type and Number -->
+                <label for="rentalType">Rental Type<span class="required">*</span>:</label>
+                <input type="text" id="rentalType" name="rentalType" required>
+                <br>
+                <label for="numberOfRentals">Number of Rentals:</label>
+                <input type="number" id="numberOfRentals" name="numberOfRentals" min="1" required>
+                <br>
+                <!-- Contact Information -->
+                <label for="phoneNumber">Phone Number<span class="required">*</span>:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                <br>
+                <label for="fullName">Full Name<span class="required">*</span>:</label>
+                <input type="text" id="fullName" name="fullName" required>
+                <br>
+                <label for="email">Email<span class="required">*</span>:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <!-- Location Information -->
+                <label for="location">Home State or Country<span class="required">*</span>:</label>
+                <input type="text" id="location" name="location" required>
+                <br>
+                <!-- Cruise Line and Special Accommodations -->
+                <label for="cruiseLine">Cruise Line (if applicable):</label>
+                <input type="text" id="cruiseLine" name="cruiseLine">
+                <br>
+                <label for="specialAccommodations">Special Accommodations/Comments:</label>
+                <textarea id="specialAccommodations" name="specialAccommodations"
+                    placeholder="Ex. Need and location of drop-off request..." rows="4"></textarea>
+                <br>
+                <!-- <span id="total">Estimated Total:</span> -->
+                <!-- Submit Button -->
+                <button class="primary-button" type="submit">Create Reservation</button>
+            </form>
+            <!-- rental agreement information -->
+            <div>
+                <h2>
+                    **VEHICLE RENTAL AGREEMENT**
+                </h2>
+
+                <p>
+                    This Vehicle Rental Agreement is entered into between Scoots, hereinafter referred
+                    to as the "Company," and the undersigned, hereinafter referred to as the "Renter."
+
+                    **1. RENTALS:**
+                    a. The Renter agrees to pay the total rental fee for the specified rental period.
+                    b. Payment Methods: [Google Pay / Apple Pay / Credit Card / Cash / Venmo]
+                    c. A valid drivers license is required in hand at the time of rental.
+                    d. Fuel charge is not included.
+                    e. Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.
+
+                    **2. SECURITY DEPOSIT:**
+                    a. The Renter agrees to provide a security deposit of $50 to confirm reservations.
+                    b. The security deposit will be refunded upon the return of the vehicle in the same condition it was
+                    rented.
+
+                    **3. USE OF VEHICLE:**
+                    a. The Renter agrees to use the vehicle only for legal and lawful purposes.
+                    b. The Renter shall not sublease or allow any other person to drive the vehicle.
+                    c. No one under the age of 12 years of age are allowed to ride on the scooters.
+                    d. Unlimited mileage.
+
+                    **4. INSURANCE:**
+                    a. Liability insurance is included.
+                    b. Damage insurance is available for purchase.
+                    c. The Renter is responsible for any damage or loss not covered by insurance during the rental
+                    period.
+
+                    **5. MAINTENANCE AND REPAIRS:**
+                    a. The Renter agrees to notify the Company promptly of any mechanical issues or damage to the
+                    vehicle.
+                    b. The Company will cover the costs of routine maintenance; however, the Renter is responsible for
+                    damage caused by misuse.
+
+                    **6. RETURN OF VEHICLE:**
+                    a. The Renter agrees to return the vehicle on the specified return date.
+                    b. Late returns may incur additional charges.
+                    c. Rentals may be returned to either physical location.
+
+                    **7. CANCELLATION POLICY:**
+                    a. The Renter may cancel the reservation up to 7 days in advance without penalty.
+                    b. Cancellations made within 7 days may be subject to a cancellation fee.
+
+                    **8. ENTIRE AGREEMENT:**
+                    a. This Agreement constitutes the entire understanding between the Company and the Renter and
+                    supersedes
+                    any prior agreements.
+                </p>
+            </div>
+
+        </body>
+
+        </html>
+    </main>
+    <footer>
+        <p>(444) 333-6666 | info@scoots.com </p>
+        <div class="socials">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        </div>
+        <div id="copy">
+            <p>
+                &copy;
+                <span id="currentYear"></span>
+                TayLynn Harman | Created as a project for WDD230 | <a href="references.html">References</a>
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/reservation.js"></script>
+    <script src="scripts/active.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cinzel:wght@500&family=Fauna+One&display=swap');
+
+:root {
+    --primary-color: #103B42;
+    --secondary-color: #202020;
+    --accent-color: #7EB6BF;
+    --text-color: #FFFFFF;
+    --heading-font: "Cinzel",
+        "PT Serif",
+        "Lato";
+    --paragraph-font: "Fauna One",
+        "Tahoma",
+        "verdana";
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-family: var(--paragraph-font);
+}
+
+section {
+    margin-top: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    padding-block: 2rem;
+    margin-block: 0;
+}
+
+/* Header */
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+/* Responsive Menu styles */
+
+#menu {
+    display: flex;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 3px 7px 6px;
+    font-size: 2rem;
+    width: 100%;
+    justify-self: center;
+    /* align-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "x";
+    color: white;
+}
+
+ul {
+    padding: 0;
+    margin-block: 0;
+}
+
+.navigation a {
+    padding: 15px;
+    display: block;
+    font-size: 14pt;
+    font-family: var(--heading-font);
+}
+
+.navigation li {
+    display: none;
+}
+
+.open li {
+    display: block;
+    background: var(--secondary-color);
+    border-style: outset;
+    border-color: #999999;
+}
+
+.active {
+    border-bottom: 7px solid var(--text-color);
+}
+
+/* Main */
+main {
+    /* padding-inline: 30px; */
+    flex-grow: 1;
+}
+
+h1 {
+    grid-column: 1/13;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+main.rental,
+main.contacts,
+main.reservations {
+    margin-inline: 1em;
+}
+
+#banner {
+    display: block;
+    background: var(--secondary-color);
+    color: var(--text-color);
+}
+
+#closeBanner {
+    color: var(--text-color);
+    background: var(--secondary-color);
+    border-color: #acacac;
+}
+
+#banner p {
+    font-size: small;
+    margin-block: 0em;
+    line-height: 2rem;
+}
+
+.home a {
+    padding: 15px;
+}
+
+button.form,
+a.button,
+.button {
+    font-size: 20px;
+    border-style: outset;
+}
+
+.primary-button,
+.sec-button {
+    grid-column: span 6;
+    line-height: 3.5rem;
+    width: 60%;
+    margin-inline: auto;
+    font-size: 20px;
+    border-style: outset;
+    border-radius: 8px;
+    font-family: 'Cinzel';
+}
+
+.primary-button {
+    background: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.primary-button:hover {
+    background: var(--text-color);
+    color: var(--secondary-color);
+}
+
+.sec-button {
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+
+.sec-button:hover {
+    color: var(--primary-color);
+    background: var(--text-color);
+}
+
+a:hover,
+.fa:hover {
+    color: var(--primary-color);
+    background: var(--text-color);
+}
+
+/* Footer */
+footer.home-footer {
+    margin-top: 0;
+}
+
+footer {
+    background: var(--secondary-color);
+    color: var(--text-color);
+    padding: 10px;
+    margin-top: 1em;
+}
+
+#copy {
+    font-size: 10px;
+}
+
+.socials {
+    margin: 15px;
+}
+
+.fa {
+    padding: 9px;
+    width: 20px;
+    color: var(--text-color);
+    margin: 4px;
+    border: solid 2px;
+    font-size: 20px;
+}
+
+/* index.html */
+.summary-card {
+    margin-inline: 25px;
+}
+
+.location-card {
+    border: 10px solid var(--primary-color);
+    width: 90%;
+    box-shadow: 5px 5px 10px #161c1c;
+}
+
+.msg {
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding-bottom: 20px;
+    margin-top: 20px;
+    padding-inline: 10px;
+}
+
+a.msg {
+    background: var(--text-color);
+    color: var(--primary-color) !important;
+}
+
+/* Weather */
+#weather {
+    display: block;
+}
+
+#weather img {
+    height: 4rem;
+    width: auto;
+}
+
+.forecast-card {
+    color: white;
+    background: rgba(0.039, 0.231, 0.259, .7);
+    padding-block: 20px;
+    border-radius: 8px;
+    margin-block: 1rem;
+    width: 18rem;
+    margin-inline: auto;
+}
+
+.contact img {
+    position: relative;
+
+}
+
+.contact a {
+    position: absolute;
+    top: 684%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+/* rental.html */
+.vehicle-card img {
+    width: 250px;
+    height: auto;
+}
+
+.vehicle-card {
+    padding: 35px;
+}
+
+.vehicle-card:nth-child(even) {
+    background: #f2f2f2;
+    position: sticky;
+}
+
+.vehicle-card h3 {
+    place-items: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    align-items: center;
+    display: flex;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* reservations.html */
+.reservations p {
+    font-size: 14px;
+}
+
+select {
+    width: -webkit-fill-available;
+    border-radius: 8px;
+    border: none;
+    padding: 13px;
+    margin-block: 10px;
+}
+
+/* contacts.html */
+.contacts p {
+    line-height: 2rem;
+}
+
+b {
+    font-size: 13pt;
+}
+
+/* Forms */
+form {
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding: 20px;
+    text-align: left;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+input,
+textarea {
+    width: -webkit-fill-available;
+    border-radius: 8px;
+    border: none;
+    padding: 13px;
+    margin-block: 10px;
+}
+
+.required {
+    color: red;
+    margin-left: 5px;
+}
+
+/* google map */
+iframe {
+    width: 100%;
+}
+
+.banner {
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    font-size: small;
+    margin: initial;
+    line-height: 2.5;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}

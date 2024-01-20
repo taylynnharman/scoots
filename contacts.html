@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="TayLynn Harman">
+    <meta name="description" content="Scoots - Contacts">
+    <meta property="og:url" content="https://github.com/taylynnharman/wdd230.git">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Scoots - Contacts">
+    <meta property="og:image" content="images/hero.jpg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+    <link rel="icon" href="images/logo.svg">
+    <title>Scoots - Contacts</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/scoots.png" alt="scoots logo">
+    </header>
+    <nav>
+        <button id="menu" title="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contacts.html">Contact Us</a></li>
+
+
+        </ul>
+    </nav>
+    <main class="contacts">
+        <h1>How can we help?</h1>
+        <!-- Contact Form with Name, Email, Comment -->
+        <form action="contacts-received.html" method="get">
+            <h2>Contact Us</h2>
+
+            <label>Name:
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+            </label>
+            <br>
+
+            <label>Email: <span class="required">*</span>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </label>
+            <br>
+
+            <label>Comment<span class="required">*</span>
+                <textarea id="comment" name="comment" placeholder="Enter Text Here..." required></textarea>
+            </label>
+            <br>
+
+            <button class="primary-button" type="submit">Send Message</button>
+        </form>
+        <!-- an embedded Google map showing the two locations on Cozumel, and -->
+        <iframe src="https://www.google.com/maps/d/embed?mid=1naa1m9RhgyOYFMKHM1NDSkjYZxcHHKc&ehbc=2E312F&noprof=1"
+            width="640" height="480"></iframe>
+        <!-- Necessary Contact Info -->
+        <p>If you have concerns, comments, or questions, don't hesitate to reach out to <b>(444) 333-6666</b> or
+            email us at <b>info@scoots.com</b>. You can also fill out a contact form and we'll get back to you as
+            soon as
+            possible! Thanks!</p>
+    </main>
+    <footer>
+        <p>(444) 333-6666 | info@scoots.com </p>
+        <div class="socials">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        </div>
+        <div id="copy">
+            <p>
+                &copy;
+                <span id="currentYear"></span>
+                TayLynn Harman | Created as a project for WDD230 | <a href="references.html">References</a>
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/active.js"></script>
+</body>
+
+</html>
