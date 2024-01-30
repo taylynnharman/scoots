@@ -1,4 +1,4 @@
-const url = '../data/rentals.json';
+const url = 'https://github.com/taylynnharman/scoots/blob/0acf2517d83aae784addde44ba6dcedabbfc46e6/data/rentals.json';
 const rentalsContainer = document.querySelector('#rentals');
 
 // Retrieve data from json file
